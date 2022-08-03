@@ -46,7 +46,8 @@ export default function ImageSrollbar({ data }) {
             src={item.url}
             width={1000} 
             height={500}  
-            sizes="(max-width: 500px) 100px, (max-width: 1023px) 400px, 1000px" />
+            sizes="(max-width: 500px) 100px, (max-width: 1023px) 400px, 1000px" 
+            alt="scroll bar"/>
         </Box>
       ))}
     </ScrollMenu>

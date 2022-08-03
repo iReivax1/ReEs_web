@@ -5,7 +5,7 @@ import { MdCancel } from 'react-icons/md';
 import Image from 'next/image';
 
 import { filterData, getFilterValues } from '../utils/filterData';
-import { baseUrl, fetchApi } from '../utils/fetchApi';
+import { baseUrl, fetchApi } from '../utils/fetchapi';
 import noresult from '../assets/images/noresult.jpg';
 
 export default function SearchFilters() {
@@ -103,7 +103,7 @@ export default function SearchFilters() {
                 ))}
                 {!loading && !locationData?.length && (
                   <Flex justifyContent='center' alignItems='center' flexDir='column' marginTop='5' marginBottom='5' >
-                    <Image src={noresult} width='400' height={"350"}/>
+                    <Image src={noresult} width='400' height={"350"} alt="No results"/>
                     <Text fontSize='xl' marginTop='3'>
                       Waiting to search!
                     </Text>
